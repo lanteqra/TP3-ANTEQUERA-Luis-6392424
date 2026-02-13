@@ -1,0 +1,68 @@
+/*--Typographies / Couleurs--*/
+@import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap);
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+
+    background-color: #1B4332;
+}
+
+/*--Mise en page (positionement) --*/
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2px solid black;
+}
+
+
+
+/*-- Header /  Navigations / Footer--*/
+.flex-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+nav ul {
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.btn-menu {
+    background-color: #004B8D;
+    color: #fff;
+    padding: 14px 28px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    font-weight: 500;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.btn-menu:hover {
+    font-weight: 800;
+    background-color: red;
+    border: 5px solid #fff;
+
+}
