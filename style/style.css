@@ -18,6 +18,9 @@ body {
     padding: 2px solid black;
 }
 
+h1, h2, h3, h4, h5 {
+    font-family: "Playfair Display", serif;
+}
 
 
 /*-- Header /  Navigations / Footer--*/
@@ -57,18 +60,90 @@ a {
     border: 3px solid #fff;
     border-radius: 30px;
     font-weight: 500;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease; 
+    cursor: pointer; 
+    display: inline-block;
 }
 
 .btn-menu:hover {
     font-weight: 800;
-    background-color: red;
+    background-color: #fa4224;
     border: 5px solid #fff;
 
 }
 
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .flex-header {
+    flex-direction: column;
+    gap: 20px;
+}
+}
+
+
 .logo-header {
     width: 200px;
+}
+
+
+.btn-body {
+    
+    padding: 14px 28px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    
+    padding: 14px 28px;
+    color: #fff;
+    background-color: #fa4224;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-body:hover {
+    font-weight: 800;
+    
+    border: 5px solid #fff;
+
+    font-weight: 700;
+    background-color: #ffd60A;
+    
+    
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
+
+
+#bannier {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 40px  20px;
+    background-color: #c7a93b;
+    background-image: url(../media/img/beautiful-coconut-palm-tree-blue-sky.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#bannier h2 {
+    font-size: 3rem;
+
+}
+
+.bannier-txt,
+.bannier-media {
+    flex: 1;
+    padding: 10px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
 
 video {
@@ -76,6 +151,34 @@ video {
     height: auto;
     border-radius: 12px;
     display: block;
-    margin-bottom: 25px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 1200px) {
+    #bannier {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 960px) {
+    #bannier {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 570px) {
+    #bannier {
+        padding: 40px 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+        align-items: center;
+        
+    }
+
+    
 }
