@@ -7,7 +7,7 @@ body {
     line-height: 1.5;
     color: #fff;
 
-    background-color: #1B4332;
+    background-color: #023529;
 }
 
 /*--Mise en page (positionement) --*/
@@ -26,7 +26,7 @@ body {
     flex-wrap: wrap;
     gap: 30px;
 
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
 
@@ -65,4 +65,8 @@ a {
     background-color: red;
     border: 5px solid #fff;
 
+}
+
+.logo-header {
+    width: 200px;
 }
