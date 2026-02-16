@@ -74,6 +74,19 @@ a {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
 
+.btn-menu:hover {
+    font-weight: 800;
+    
+    border: 5px solid #fff;
+
+    font-weight: 700;
+    background-color: #c7a93b;
+    
+    
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+
 
 @media (max-width: 768px) {
     nav ul {
@@ -118,7 +131,7 @@ a {
     border: 5px solid #fff;
 
     font-weight: 700;
-    background-color: #ffd60A;
+    background-color: #c7a93b;
     
     
     transform: translateY(-5px);
@@ -292,7 +305,7 @@ footer {
     max-width: 320px;
     border-radius: 10px;
     position: relative;
-    border: 2px solid #F4C430;
+    border: 2px solid #c7a93b;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
 }
 
@@ -306,7 +319,7 @@ footer {
 .client-avatar img {
     width: 70px;
     height: 70px;
-    border: 5px solid #F4C430;
+    border: 5px solid #c7a93b;
     border-radius: 50%;
     object-fit: cover;
     background-color: #fa4224;
@@ -333,14 +346,14 @@ footer {
 }
 
 .testimonial::-webkit-scrollbar-thumb {
-    background-color: #F4C430;
+    background-color: #c7a93b;
     border-radius: 10px;
     border: 2px solid #fff;
 }
 
 
 .testimonial::-webkit-scrollbar-thumb:hover {
-    background: #F4C430;
+    background: #c7a93b;
     border-radius: 10px;
     border: 2px solid #fff;
 
