@@ -160,7 +160,7 @@ a {
     background-repeat: no-repeat;
 }
 
-#bannier h1 {
+#bannier h2 {
     font-size: 3rem;
 
 }
@@ -268,9 +268,9 @@ footer {
 /* Main */
 #temoignages {
     background-color: #ffffff4b;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    padding: 15px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 30px;
     border-radius: 15px;
 
 }
@@ -279,6 +279,7 @@ footer {
     font-weight: 700;
     font-size: 2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    line-height: 1rem;
 }
 
 #clients h3 {
@@ -292,7 +293,7 @@ footer {
     gap: 40px;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 40px 20px;
     
 }
 
