@@ -24,9 +24,17 @@ h1, h2, h3, h4, h5 {
     font-family: "Playfair Display", serif;
 }
 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
 /*-- Header /  Navigations / Footer--*/
 
+header {
+    width: 100%;
+}
 
 .flex-header {
     display: flex;
@@ -41,7 +49,7 @@ h1, h2, h3, h4, h5 {
     background-image: url(../media/img/css-pattern.png);
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat
+    background-repeat: repeat;
 }
 
 
@@ -153,6 +161,10 @@ a {
     background-repeat: no-repeat;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 #bannier h2 {
     font-size: 3rem;
 
@@ -222,12 +234,11 @@ footer {
     padding: 30px;
     border-radius: 15px;
 
-    font-size: clamp(1rem, 1.2vw, 1.2rem);
 }
 
 .title-page {
+    font-size: 2rem;
     font-weight: 700;
-    font-size: clamp(1.4rem, 2vw, 2rem);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
     line-height: 1rem;
 }
@@ -338,11 +349,6 @@ footer {
     }
 
 
-
-    .client-card {
-        max-width: 300px;
-    }
-
 }
 
 @media screen and (max-width: 960px) { 
@@ -352,14 +358,27 @@ footer {
         text-align: center;
     }
 
+    .bannier-txt,
+    .bannier-media {
+        width: 100%;
+        padding: 0;
+    }
+
+    .title-page {
+        font-size: 1.7rem;
+    }
+
+    .testimonial {
+        font-size: 0.95rem;
+    }
+
     .flex-footer {
         font-size: 1rem;
     }
 
     .client-card {
         flex: 1 1 100%;
-        max-width: 50%;
-        
+        max-width: 75%;
     }
 
 }
@@ -409,6 +428,18 @@ footer {
         overflow: visible;
     }
     
+    .title-page {
+        font-size: 1.4rem;
+    }
+
+    #temoignages h3 {
+        font-size: 1rem;
+    }
+
+    .testimonial {
+        font-size: 0.9rem;
+    }
+    
     .client-avatar {
         left: 50%;
         transform: translateX(-50%);
@@ -420,5 +451,4 @@ footer {
         text-align: center;
     }
 }
-
 
