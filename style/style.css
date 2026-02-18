@@ -383,7 +383,7 @@ footer {
 
 }
 
-/* pour eviter que le menu*/
+/* À partir de 770px, dans le header, le menu passe en colonne afin d'éviter que le logo et les boutons de navigation se chevauchent*/
 @media screen and (max-width: 770px) {
     nav ul {
         flex-direction: column;
