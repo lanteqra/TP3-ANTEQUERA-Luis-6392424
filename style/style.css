@@ -191,14 +191,14 @@ video {
 /*footer*/
 
 footer { 
+    font-weight: 700;
     padding: 30px 20px;
     background-color: #023529;
     background-image: url(../media/img/css-pattern.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat
-    font-weight: 700;
-
+    
 }
 
 .rs-logo {
