@@ -73,10 +73,10 @@ a {
 }
 
 .btn-menu {
-    background-color: #004B8D;
+    background-color: #023529;
     color: #fff;
     padding: 14px 28px;
-    border: 3px solid #fff;
+    border: 3px solid #c7a93b;
     border-radius: 30px;
     font-weight: 500;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -114,12 +114,12 @@ a {
 .btn-body {
     
     padding: 14px 28px;
-    border: 3px solid #fff;
+    border: 3px solid #c7a93b;
     border-radius: 30px;
     
     padding: 14px 28px;
     color: #fff;
-    background-color: #004B8D;
+    background-color: #023529;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
     transition: all 0.3s ease;
     cursor: pointer;
@@ -185,20 +185,6 @@ video {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
 }
 
-
-.btn-menu {
-    background-color: #004B8D;
-    color: #fff;
-    padding: 14px 28px;
-    border: 3px solid #fff;
-    border-radius: 30px;
-    font-weight: 500;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease; 
-    cursor: pointer; 
-    display: inline-block;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
-}
 
 /*footer*/
 
