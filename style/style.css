@@ -49,8 +49,8 @@ header {
 
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #023529;
     background-image: url(../media/img/css-pattern.png);
     background-size: cover;
@@ -129,7 +129,10 @@ a {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
     transition: all 0.3s ease;
     cursor: pointer;
-    display: inline-block;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .btn-body:hover {
@@ -144,10 +147,17 @@ a {
     transition: 0.3s ease;
 }
 
+.btn-menu-mobile img {
+    width: 50px;
+}
+
 .btn-ma-commande {
     background-color: #c7a93b;
     border-color: #fff;
     
+    display: flex;
+    align-items: center;
+    gap: 8px
 }
 
 .btn-ma-commande:hover {
@@ -168,9 +178,7 @@ a {
     cursor: pointer;
 }
 
-.btn-menu-mobile img {
-    width: 50px;
-}
+
 
 .btn-menu-mobile:hover {
     background-color: #023529;
@@ -179,7 +187,7 @@ a {
     font-weight: 800;
 }
 
-.bannier-txt span {
+.btn-body span {
     
     color: #fa4224;
     font-weight: 800;
