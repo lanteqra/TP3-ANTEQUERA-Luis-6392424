@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="...">
+    <meta name="description" content="...">
     <title>Réservation | Macondo Bistro - Voyage culinaire colombien </title>
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">
@@ -15,16 +14,17 @@
 <body>
     <header>
         <div class="flex-header">
-            
-                <a href="index.html"><img class="logo-header" src="media/img/logo-macondo-bistro.png"
-                        alt="Logo - Mancondo Bistro"></a>
-            
+
+            <a href="index.html"><img class="logo-header" src="media/img/logo-macondo-bistro.png"
+                    alt="Logo - Mancondo Bistro"></a>
+
             <a class="btn-menu-mobile" href="#"><img src="media/img/icons/menu-mobile.png" alt="botton menu mobile"></a>
             <nav>
                 <ul>
                     <li><a class="btn-menu" href="reservation.html">Réservations</a></li>
                     <li><a class="btn-menu" href="restaurant.html">Restaurant</a></li>
-                    <li><a class="btn-menu btn-ma-commande" href="ma-commande.html">Ma Commande <img src="media/img/icons/commade.png" alt="icone de vente en ligne"></a></li>
+                    <li><a class="btn-menu btn-ma-commande" href="ma-commande.html">Ma Commande <img
+                                src="media/img/icons/commade.png" alt="icone de vente en ligne"></a></li>
                 </ul>
             </nav>
         </div>
@@ -33,11 +33,108 @@
     <main>
         <section class="container" id="reservation">
             <h1 class="title-page">Réservation</h1>
-            
-            <div>
+            <p>Réservez votre table au Macondo Bistro et vivez une expérience culinaire inoubliable.</p>
+            <input type="checkbox" id="toggle-success">
+            <form id="frm-reservation">
+                <fieldset>
+                    <legend>Demande de réservation </legend>
+                    <div>
+                        <label for="txt-prenom"> Votre prénom : <span>*</span></label>
+                        <input type="text" name="text-prenom" id="text-prenom" placeholder="Marie" maxlength="25"
+                            required>
+                    </div>
+                    <div>
+                        <label for="txt-nom"> Votre nom : <span>*</span></label>
+                        <input type="text" name="text-prenom" id="text-prenom" placeholder="Dupont" maxlength="25"
+                            required>
+                    </div>
+                    <div>
+                        <label for="txt-email">Entrez votre e-mail : <span>*</span></label>
+                        <input type="email" name="txt-email" id="txt-email" placeholder="email@exemple.com"
+                            maxlength="25" required>
+                    </div>
+                    <div>
+                        <label for="nombre-telephone">Entrez votre nombre de téléphone : <span>*</span></label>
+                        <input type="nombre-telephone" name="nombre-telephone" id="telephone" placeholder="+1 123 4567"
+                            maxlength="7" required>
+                    </div>
+                    <div>
+                        <label>Canal de communication préféré : </label>
 
-            </div>
-            
+                        <input type="radio" id="radio-m-communication-1" name="radio-m-communication" value="email"
+                            checked>
+                        <label for="radio-m-communicatio-1">E-mail</label>
+
+
+                        <input type="radio" id="radio-m-communication-2" name="radio-m-communication" value="telephone">
+                        <label for="radio-m-communication-2">Téléphone</label>
+                    </div>
+
+                    <fieldset>
+                        <div>
+                            <label for="date">Date <span>*</span></label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="field">
+                            <label for="hora">Heure <span>*</span></label>
+                            <select id="hora" name="hora" required>
+                                <option value="" disabled selected>Veuillez choisir une option</option>
+                                <option>13:00</option>
+                                <option>13:30</option>
+                                <option>14:00</option>
+                                <option>14:30</option>
+                                <option>19:00</option>
+                                <option>19:30</option>
+                                <option>20:00</option>
+                                <option>20:30</option>
+                                <option>21:00</option>
+                                <option>21:30</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="nombre-clients">Nombre de couverts <span>*</span> </label>
+                            <select id="nombre-clients" name="nombre-clients" required>
+                                <option value="" disabled selected>Veuillez choisir une option</option>
+                                <option>1 personne</option>
+                                <option>2 personnes</option>
+                                <option>3 personnes</option>
+                                <option>4 personnes</option>
+                                <option>5 personnes</option>
+                                <option>6 personnes</option>
+                                <option>7-10 personnes (groupe)</option>
+                                <option>Plus de 10 (événement privé)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="occasion">Occasion spéciale</label>
+                            <select id="occasion" name="occasion">
+                                <option value="" disabled selected>Veuillez choisir une option</option>
+                                <option>Anniversaires</option>
+                                <option>Romantique</option>
+                                <option>affaires</option>
+                                <option>Autres</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="notes">Demandes spéciales</label>
+                            <textarea id="notes" name="notes"
+                                placeholder="Maximum 500 caractères. Allergies, préférences de table, décoration particulière…"
+                                maxlength="500"></textarea>
+                            <p class="frm-note"> Besoin d'aide ? Appelez-nous au <a href="tel:+1 819 123 4567"> 819 123
+                                    4567</a> </p>
+                        </div>
+                    </fieldset>
+                    <label for="toggle-success" class="frm-btn">
+                        <button type="submit">Confirmer la Réservation</button>
+                    </label>
+
+                </fieldset>
+
+
+            </form>
+
+
+
         </section>
 
 

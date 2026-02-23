@@ -1,7 +1,9 @@
 /*--Typographies / Couleurs--*/
 @import url(https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap);
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -26,7 +28,11 @@ body {
 
 
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: "Playfair Display", serif;
 }
 
@@ -50,7 +56,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    
+
     background-color: #023529;
     background-image: url(../media/img/css-pattern.png);
     background-size: cover;
@@ -58,9 +64,9 @@ header {
     background-repeat: repeat;
 }
 
-    .flex-header h1 {
+.flex-header h1 {
     margin: 0;
-    }
+}
 
 nav ul {
     padding: 10px 0;
@@ -88,21 +94,21 @@ a {
     border-radius: 30px;
     font-weight: 500;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease; 
-    cursor: pointer; 
+    transition: all 0.3s ease;
+    cursor: pointer;
     display: inline-block;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
 
 .btn-menu:hover {
     font-weight: 800;
-    
+
     border: 5px solid #fff;
 
     font-weight: 700;
     background-color: #c7a93b;
-    
-    
+
+
     transform: translateY(-5px);
     transition: 0.3s ease;
 }
@@ -113,18 +119,18 @@ a {
 .logo-header {
     width: 200px;
     margin-left: 20px;
-    
+
     border-radius: 20px;
     border: 3px solid #c7a93b;
 }
 
 
 .btn-body {
-    
+
     padding: 14px 28px;
     border: 3px solid #c7a93b;
     border-radius: 30px;
-    
+
     padding: 14px 28px;
     color: #fff;
     background-color: #023529;
@@ -139,12 +145,12 @@ a {
 
 .btn-body:hover {
     font-weight: 800;
-    
+
     border: 5px solid #fff;
 
     background-color: #c7a93b;
-    
-    
+
+
     transform: translateY(-5px);
     transition: 0.3s ease;
 }
@@ -156,7 +162,7 @@ a {
 .btn-ma-commande {
     background-color: #c7a93b;
     border-color: #fff;
-    
+
     display: flex;
     align-items: center;
     gap: 8px
@@ -190,7 +196,7 @@ a {
 }
 
 .btn-body span {
-    
+
     color: #fa4224;
     font-weight: 800;
     font-size: 1.5rem;
@@ -203,7 +209,7 @@ a {
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    padding: 40px  20px;
+    padding: 40px 20px;
     background-color: #c7a93b;
     background-image: url(../media/img/beautiful-coconut-palm-tree-blue-sky.jpg);
     background-size: cover;
@@ -219,7 +225,7 @@ a {
 .bannier-txt,
 .bannier-media {
     flex: 1;
-    padding: 10px; 
+    padding: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
 }
 
@@ -234,7 +240,7 @@ video {
 
 /*footer*/
 
-footer { 
+footer {
     font-weight: 700;
     padding: 30px 20px;
     background-color: #023529;
@@ -242,7 +248,6 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat
-    
 }
 
 .rs-logo {
@@ -277,7 +282,7 @@ footer {
 
 .clients-list h3 {
     color: #023529;
-    
+
     font-size: 1.2rem;
 
 }
@@ -288,7 +293,7 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
     padding: 40px 20px;
-    
+
 }
 
 
@@ -319,7 +324,7 @@ footer {
     border-radius: 50%;
     object-fit: cover;
     background-color: #fa4224;
-    
+
 }
 
 .client-avatar {
@@ -337,7 +342,7 @@ footer {
     padding-right: 8px;
     font-style: oblique;
 
-    
+
 }
 
 .testimonial::-webkit-scrollbar {
@@ -367,8 +372,6 @@ footer {
 
 
 
-
-
 /*********** MEDIA QUERIES ************/
 
 
@@ -383,8 +386,8 @@ footer {
 
 }
 
-@media screen and (max-width: 960px) { 
-    
+@media screen and (max-width: 960px) {
+
     .flex-header {
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -396,7 +399,7 @@ footer {
     }
 
     .btn-menu-mobile {
-    display: block;
+        display: block;
     }
 
 
@@ -437,14 +440,16 @@ footer {
         align-items: center;
         gap: 15px;
     }
+
     .flex-header {
-    flex-direction: column;
-    gap: 20px;
-}
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .btn-menu-mobile {
-    margin-left: 0;
-    
-}
+        margin-left: 0;
+
+    }
 }
 
 @media screen and (max-width: 570px) {
@@ -458,27 +463,27 @@ footer {
         gap: 15px;
         padding: 0;
         align-items: center;
-        
+
     }
 
     .clients-list {
         padding: 20px 10px;
-        
+
     }
 
     .client-card {
         flex: 1 1 100%;
         max-width: 100%;
-        
+
     }
-    
+
 
     .testimonial {
         height: auto;
         max-height: none;
         overflow: visible;
     }
-    
+
     .title-page {
         font-size: 1.4rem;
     }
@@ -490,7 +495,7 @@ footer {
     .testimonial {
         font-size: 0.9rem;
     }
-    
+
     .client-avatar {
         left: 50%;
         transform: translateX(-50%);
@@ -502,4 +507,5 @@ footer {
         text-align: center;
     }
 }
+
 
