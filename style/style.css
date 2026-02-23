@@ -42,6 +42,12 @@ ul {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #c7a93b;
+    font-weight: 900;
+}
+
 /*-- Header /  Navigations / Footer--*/
 
 header {
@@ -369,8 +375,128 @@ footer {
     border: 2px solid #fff;
 }
 
+/*********** FORMULAIRES ************/
+
+#frm-reservation {
+    background-color: #c7a93b60;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    line-height: 2rem;
+}
+
+fieldset {
+    border: none;
+    border-left: 5px solid #c7a93b;
+    padding: 20px;
+}
+
+legend {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #c7a93b;
+
+}
+
+label {
+
+    font-size: 1rem;
+    letter-spacing: 0.2em;
 
 
+}
+
+#frm-reservation span {
+    color: #e94e30;
+    font-weight: 600;
+
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    border: 2px solid #c7a93b;
+    border-radius: 1px;
+    padding: 5px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #023529;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: 4px solid #e94e30;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #5d7972;
+}
+
+.radio-mc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.occasion-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.occasion-group .btn-body {
+    padding: 10px;
+    text-align: center;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+}
+
+.newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+form .btn-body {
+    align-items: center;
+}
+
+.frm-note {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 0rem;
+
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
 
 /*********** MEDIA QUERIES ************/
 
@@ -507,5 +633,3 @@ footer {
         text-align: center;
     }
 }
-
-

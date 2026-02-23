@@ -34,51 +34,73 @@
         <section class="container" id="reservation">
             <h1 class="title-page">Réservation</h1>
             <p>Réservez votre table au Macondo Bistro et vivez une expérience culinaire inoubliable.</p>
-            <input type="checkbox" id="toggle-success">
-            <form id="frm-reservation">
+
+
+
+            <form id="frm-reservation" method="post">
+
                 <fieldset>
-                    <legend>Demande de réservation </legend>
-                    <div>
+                    <legend>Demande de réservation <img src="favicon-macondo.png" alt="butterflies"></legend>
+                    <div class="field">
                         <label for="txt-prenom"> Votre prénom : <span>*</span></label>
                         <input type="text" name="text-prenom" id="text-prenom" placeholder="Marie" maxlength="25"
                             required>
                     </div>
-                    <div>
+                    <div class="field">
                         <label for="txt-nom"> Votre nom : <span>*</span></label>
-                        <input type="text" name="text-prenom" id="text-prenom" placeholder="Dupont" maxlength="25"
-                            required>
+                        <input type="text" name="text-nom" id="text-nom" placeholder="Dupont" maxlength="25" required>
                     </div>
-                    <div>
-                        <label for="txt-email">Entrez votre e-mail : <span>*</span></label>
+                    <div class="field">
+                        <label for="txt-email">Entrez votre e-mail :</label>
                         <input type="email" name="txt-email" id="txt-email" placeholder="email@exemple.com"
-                            maxlength="25" required>
+                            maxlength="25">
                     </div>
-                    <div>
+                    <div class="field">
                         <label for="nombre-telephone">Entrez votre nombre de téléphone : <span>*</span></label>
-                        <input type="nombre-telephone" name="nombre-telephone" id="telephone" placeholder="+1 123 4567"
-                            maxlength="7" required>
+                        <input type="tel" name="nombre-telephone" id="telephone" placeholder="(819)456-7891"
+                            maxlength="10" required>
                     </div>
-                    <div>
-                        <label>Canal de communication préféré : </label>
-
-                        <input type="radio" id="radio-m-communication-1" name="radio-m-communication" value="email"
-                            checked>
-                        <label for="radio-m-communicatio-1">E-mail</label>
-
-
-                        <input type="radio" id="radio-m-communication-2" name="radio-m-communication" value="telephone">
-                        <label for="radio-m-communication-2">Téléphone</label>
+                    <div class="field">
+                        <label>Canal de communication préféré : <span>*</span> </label>
+                        <div class="radio-mc">
+                            <div>
+                                <input type="radio" id="radio-m-communication-1" name="radio-m-communication"
+                                    value="email">
+                                <label for="radio-m-communication-1">E-mail</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="radio-m-communication-2" name="radio-m-communication"
+                                    value="telephone">
+                                <label for="radio-m-communication-2">Téléphone</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Choix de table en : <span>*</span></label>
+                        <div class="radio-mc">
+                            <div>
+                                <input type="radio" id="radio-table-1" name="radio-table" value="salle" required>
+                                <label for="radio-table-1">Salle à manger</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="radio-table-2" name="radio-table" value="terrase">
+                                <label for="radio-table-2">Terrasse</label>
+                            </div>
+                        </div>
                     </div>
 
                     <fieldset>
-                        <div>
+                        <legend>Détails de la réservation</legend>
+                        <div class="field">
                             <label for="date">Date <span>*</span></label>
                             <input type="date" id="date" name="date" required>
                         </div>
                         <div class="field">
-                            <label for="hora">Heure <span>*</span></label>
-                            <select id="hora" name="hora" required>
+                            <label for="time">Heure <span>*</span></label>
+                            <select id="time" name="time" required>
                                 <option value="" disabled selected>Veuillez choisir une option</option>
+                                <option>12:00</option>
+                                <option>12:30</option>
                                 <option>13:00</option>
                                 <option>13:30</option>
                                 <option>14:00</option>
@@ -88,51 +110,79 @@
                                 <option>20:00</option>
                                 <option>20:30</option>
                                 <option>21:00</option>
-                                <option>21:30</option>
+
                             </select>
                         </div>
-                        <div>
+                        <div class="field">
                             <label for="nombre-clients">Nombre de couverts <span>*</span> </label>
-                            <select id="nombre-clients" name="nombre-clients" required>
-                                <option value="" disabled selected>Veuillez choisir une option</option>
-                                <option>1 personne</option>
-                                <option>2 personnes</option>
-                                <option>3 personnes</option>
-                                <option>4 personnes</option>
-                                <option>5 personnes</option>
-                                <option>6 personnes</option>
-                                <option>7-10 personnes (groupe)</option>
-                                <option>Plus de 10 (événement privé)</option>
-                            </select>
+                            <input type="number" name="nombre-clients" id="nombre-clients" value="0" min="1" max="10" required >
+                            <p class="frm-note"> Plus de 10 personnes ? Appelez-nous au <a href="tel:+1 (819) 123 4567">
+                                    (819)
+                                    123 - 4567</a> </p>
                         </div>
-                        <div>
-                            <label for="occasion">Occasion spéciale</label>
-                            <select id="occasion" name="occasion">
-                                <option value="" disabled selected>Veuillez choisir une option</option>
-                                <option>Anniversaires</option>
-                                <option>Romantique</option>
-                                <option>affaires</option>
-                                <option>Autres</option>
-                            </select>
+
                         </div>
-                        <div>
-                            <label for="notes">Demandes spéciales</label>
+                        <div class="field ">
+                            <label>Occasion spéciale</label>
+
+
+                            <div class="occasion-group">
+                                <div>
+                                    <input class="occasion-tag" type="radio" name="occasion" id="oc-none" value="aucune"
+                                        checked />
+                                    <label class="occasion-label" for="oc-none">Aucune</label>
+                                </div>
+                                <div>
+                                    <input class="occasion-tag" type="radio" name="occasion" id="oc-anniv"
+                                        value="anniversaire" />
+                                    <label class="occasion-label" for="oc-anniv">Anniversaire</label>
+                                </div>
+                                <div>
+                                    <input class="occasion-tag" type="radio" name="occasion" id="oc-rom"
+                                        value="romantique" />
+                                    <label class="occasion-label" for="oc-rom">Romantique</label>
+                                </div>
+                                <div>
+                                    <input class="occasion-tag" type="radio" name="occasion" id="oc-aff"
+                                        value="affaires" />
+                                    <label class="occasion-label" for="oc-aff">Affaires</label>
+                                </div>
+                                <div>
+                                    <input class="occasion-tag" type="radio" name="occasion" id="oc-autre"
+                                        value="autre" />
+                                    <label class="occasion-label" for="oc-autre">Autre</label>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="field">
+                            <label for="notes">Demandes spéciales </label>
                             <textarea id="notes" name="notes"
                                 placeholder="Maximum 500 caractères. Allergies, préférences de table, décoration particulière…"
                                 maxlength="500"></textarea>
-                            <p class="frm-note"> Besoin d'aide ? Appelez-nous au <a href="tel:+1 819 123 4567"> 819 123
-                                    4567</a> </p>
+                            <p class="frm-note"> Besoin d'aide ? Appelez-nous au <a href="tel:+1 (819) 123 4567"> (819)
+                                    123 - 4567</a> </p>
                         </div>
+
+
+
                     </fieldset>
-                    <label for="toggle-success" class="frm-btn">
-                        <button type="submit">Confirmer la Réservation</button>
-                    </label>
+
+                    <div class="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">
+                            Je souhaite m'inscrire à l'infolettre
+                        </label>
+                    </div>
+
+                    <button class="btn-body" type="submit">Confirmer la Réservation</button>
 
                 </fieldset>
 
 
             </form>
-
 
 
         </section>
@@ -141,7 +191,7 @@
     </main>
 
     <footer>
-        <section class="container">
+        <section class=" container">
             <div class="flex-footer">
                 <div>
                     <span>Site Réalisé par : Luis Antequera </span>
