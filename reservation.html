@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Réservez votre table au Macondo Bistro à Sherbrooke. Remplissez notre formulaire de réservation en ligne pour vivre une expérience culinaire inoubliable.">
+    <meta name="description"
+        content="Réservez votre table au Macondo Bistro à Sherbrooke. Remplissez notre formulaire de réservation en ligne pour vivre une expérience culinaire inoubliable.">
     <title>Réservation | Macondo Bistro - Voyage culinaire colombien </title>
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/style.css">
@@ -51,12 +52,12 @@
                         <input type="text" name="text-nom" id="text-nom" placeholder="Dupont" maxlength="25" required>
                     </div>
                     <div class="field">
-                        <label for="txt-email">Entrez votre e-mail :</label>
+                        <label for="txt-email">E-mail :</label>
                         <input type="email" name="txt-email" id="txt-email" placeholder="email@exemple.com"
                             maxlength="25">
                     </div>
                     <div class="field">
-                        <label for="nombre-telephone">Entrez votre nombre de téléphone : <span>*</span></label>
+                        <label for="nombre-telephone">Téléphone : <span>*</span></label>
                         <input type="tel" name="nombre-telephone" id="telephone" placeholder="(819)456-7891"
                             maxlength="10" required>
                     </div>
@@ -75,22 +76,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="field">
-                        <label>Choix de table en : <span>*</span></label>
-                        <div class="radio-mc">
-                            <div>
-                                <input type="radio" id="radio-table-1" name="radio-table" value="salle" required>
-                                <label for="radio-table-1">Salle à manger</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="radio-table-2" name="radio-table" value="terrase">
-                                <label for="radio-table-2">Terrasse</label>
-                            </div>
-                        </div>
-                    </div>
+
 
                     <fieldset>
                         <legend>Détails de la réservation</legend>
+                        <div class="field">
+                            <label>Choix de table en : <span>*</span></label>
+                            <div class="radio-mc">
+                                <div>
+                                    <input type="radio" id="radio-table-1" name="radio-table" value="salle" required>
+                                    <label for="radio-table-1">Salle à manger</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="radio-table-2" name="radio-table" value="terrase">
+                                    <label for="radio-table-2">Terrasse</label>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="field">
                             <label for="date">Date <span>*</span></label>
                             <input type="date" id="date" name="date" required>
@@ -120,9 +123,9 @@
 
                         </div>
                         <p class="frm-note"> Plus de 10 personnes ? Appelez-nous au <a
-                                href="tel:+1 (819) 123 4567">(819) 123 - 4567</a>
-                        <p>
-                            
+                                href="tel:+1 (819) 123 4567">(819) 123 - 4567 </a> </p>
+
+
                         <div class="field ">
                             <label>Occasion spéciale</label>
 
@@ -161,8 +164,8 @@
                                 maxlength="500"></textarea>
 
                         </div>
-                        <p class="frm-note"> Besoin d'aide ? Appelez-nous au <a href="tel:+1 (819) 123 4567"> (819) 123
-                                - 4567</a> </p>
+                        <p class="frm-note"> Besoin d'aide ? Appelez-nous au <a href="tel:+1 (819) 123 4567"> (819) 123-
+                                4567</a> </p>
 
 
 
@@ -175,7 +178,7 @@
                         </label>
                     </div>
                     <div class="form-actions">
-                    <button class="btn-body" type="submit">Confirmer la Réservation</button>
+                        <button class="btn-body" type="submit">Confirmer la Réservation</button>
                     </div>
 
                 </fieldset>

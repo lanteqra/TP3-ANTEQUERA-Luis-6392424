@@ -438,7 +438,7 @@ textarea {
     min-width: 15px;
     border: 2px solid #c7a93b;
     border-radius: 1px;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
     font-size: 0.9rem;
     font-weight: 300;
@@ -460,9 +460,10 @@ textarea::placeholder {
 
 .field {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     
-    gap: 10px;
+    gap: 8px;
+    margin: 5px;
 }
 
 .field label {
@@ -481,9 +482,16 @@ textarea::placeholder {
 .radio-mc {
     display: flex;
     flex-wrap: wrap;
+
     gap: 30px;
     justify-content: center;
     text-align: center;
+    
+}
+
+.radio-mc input[type="radio"]{
+    margin: 0;
+    
 }
 
 .occasion-group {
