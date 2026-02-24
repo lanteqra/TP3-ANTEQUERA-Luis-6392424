@@ -506,7 +506,7 @@ form .btn-body {
     gap: 8px;
 }
 
-#reservation {
+#conf-reservation {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -521,7 +521,7 @@ form .btn-body {
     flex: 1 1 70%;
 }
 
-#reservation img {
+#conf-reservation img {
     width: 30%;
 }
 /*********** MEDIA QUERIES ************/
