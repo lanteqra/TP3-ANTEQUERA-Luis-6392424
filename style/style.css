@@ -498,6 +498,24 @@ form .btn-body {
     gap: 8px;
 }
 
+#reservation {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20pxpx;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.msg-confirmation {
+    flex: 1 1 70%;
+}
+
+#reservation img {
+    width: 30%;
+
 /*********** MEDIA QUERIES ************/
 
 
