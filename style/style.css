@@ -515,7 +515,7 @@ form .btn-body {
 
 #reservation img {
     width: 30%;
-
+}
 /*********** MEDIA QUERIES ************/
 
 
@@ -621,7 +621,6 @@ form .btn-body {
 
     }
 
-
     .testimonial {
         height: auto;
         max-height: none;
@@ -650,4 +649,5 @@ form .btn-body {
         gap: 15px;
         text-align: center;
     }
+
 }
