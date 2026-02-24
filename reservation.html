@@ -43,7 +43,7 @@
                     <legend>Demande de réservation <img src="favicon-macondo.png" alt="butterflies"></legend>
                     <div class="field">
                         <label for="txt-prenom"> Votre prénom : <span>*</span></label>
-                        <input type="text" name="text-prenom" id="text-prenom" placeholder="Marie" maxlength="25"
+                        <input type="text" name="txt-prenom" id="txt-prenom" placeholder="Marie" maxlength="25"
                             required>
                     </div>
                     <div class="field">
@@ -115,23 +115,20 @@
                         </div>
                         <div class="field">
                             <label for="nombre-clients">Nombre de couverts <span>*</span> </label>
-                            <input type="number" name="nombre-clients" id="nombre-clients" value="0" min="1" max="10" required >
-                            <p class="frm-note"> Plus de 10 personnes ? Appelez-nous au <a href="tel:+1 (819) 123 4567">
-                                    (819)
-                                    123 - 4567</a> </p>
-                        </div>
+                            <input type="number" name="nombre-clients" id="nombre-clients" value="0" min="1" max="10"
+                                required>
 
                         </div>
+                        <p class="frm-note"> Plus de 10 personnes ? Appelez-nous au <a
+                                href="tel:+1 (819) 123 4567">(819) 123 - 4567</a>
+                        <p>
+                            
                         <div class="field ">
                             <label>Occasion spéciale</label>
 
 
                             <div class="occasion-group">
-                                <div>
-                                    <input class="occasion-tag" type="radio" name="occasion" id="oc-none" value="aucune"
-                                        checked />
-                                    <label class="occasion-label" for="oc-none">Aucune</label>
-                                </div>
+
                                 <div>
                                     <input class="occasion-tag" type="radio" name="occasion" id="oc-anniv"
                                         value="anniversaire" />
@@ -162,9 +159,10 @@
                             <textarea id="notes" name="notes"
                                 placeholder="Maximum 500 caractères. Allergies, préférences de table, décoration particulière…"
                                 maxlength="500"></textarea>
-                            <p class="frm-note"> Besoin d'aide ? Appelez-nous au <a href="tel:+1 (819) 123 4567"> (819)
-                                    123 - 4567</a> </p>
+
                         </div>
+                        <p class="frm-note"> Besoin d'aide ? Appelez-nous au <a href="tel:+1 (819) 123 4567"> (819) 123
+                                - 4567</a> </p>
 
 
 
@@ -176,8 +174,9 @@
                             Je souhaite m'inscrire à l'infolettre
                         </label>
                     </div>
-
+                    <div class="form-actions">
                     <button class="btn-body" type="submit">Confirmer la Réservation</button>
+                    </div>
 
                 </fieldset>
 
