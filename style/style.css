@@ -101,7 +101,7 @@ a {
 }
 
 .btn-menu {
-    background-color: #023529;
+    background-color: #3a5c2e;
     color: #fff;
     padding: 14px 28px;
     border: 3px solid #c7a93b;
@@ -120,7 +120,7 @@ a {
     border: 5px solid #fff;
 
     font-weight: 700;
-    background-color: #c7a93b;
+    background-color: #023529;
 
 
     transform: translateY(-5px);
@@ -147,7 +147,7 @@ a {
 
     padding: 14px 28px;
     color: #fff;
-    background-color: #023529;
+    background-color: #3a5c2e;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
     transition: all 0.3s ease;
     cursor: pointer;
@@ -162,7 +162,7 @@ a {
 
     border: 5px solid #fff;
 
-    background-color: #c7a93b;
+    background-color: #023529;
 
 
     transform: translateY(-5px);
@@ -183,7 +183,7 @@ a {
 }
 
 .btn-ma-commande:hover {
-    background-color: #ff5a3d;
+    background-color: #e94e30;
     transform: translateY(-6px);
     font-weight: 800;
 }
@@ -209,9 +209,16 @@ a {
     font-weight: 800;
 }
 
+.btn-menu.current-page {
+    background-color: #c7a93b;
+    color: #023529;
+    border-color: #fff;
+    font-weight: 700;
+}
+
 .btn-body span {
 
-    color: #fa4224;
+    color: #e94e30;
     font-weight: 800;
     font-size: 1.5rem;
     line-height: 1rem;
@@ -279,7 +286,8 @@ footer {
 
 /* Main */
 #temoignages {
-    background-color: #ffffff4b;
+    background-color: #c7a93b60;
+    
     margin-bottom: 25px;
     margin-top: 25px;
     padding: 30px;
@@ -337,7 +345,7 @@ footer {
     border: 5px solid #c7a93b;
     border-radius: 50%;
     object-fit: cover;
-    background-color: #fa4224;
+    background-color: #e94e30;
 
 }
 
@@ -509,6 +517,7 @@ input[type="radio"] {
 textarea {
     min-height: 120px;
 }
+
 
 .form-actions {
     display: flex;
