@@ -573,6 +573,20 @@ textarea {
     width: 30%;
 }
 
+.grid-galerie {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    
+    
+
+}
+
+.grid-galerie img {
+    width: 100%;
+    
+
+}
+
 /*********** MEDIA QUERIES ************/
 
 
