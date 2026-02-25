@@ -574,17 +574,40 @@ textarea {
 }
 
 .grid-galerie {
+    list-style: none;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    gap: 10px;
+
+    align-items: center;
+    justify-items: center;
     
-    
+
 
 }
 
+.grid-galerie li {
+    width: 100%;
+    height: 100%;
+}
+
+
 .grid-galerie img {
     width: 100%;
-    
+    height: 100%;
+    object-fit: cover;
 
+
+}
+
+#item3 {
+    grid-area: 1 / 3 / 3 / 5;
+}
+
+#item4 {
+    grid-area: 2 / 1 / 4 / 3;
 }
 
 /*********** MEDIA QUERIES ************/
