@@ -573,6 +573,15 @@ textarea {
     width: 30%;
 }
 
+#restaurant {
+    background-color: #c7a93b60;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
 .grid-galerie {
     list-style: none;
     display: grid;
@@ -583,8 +592,8 @@ textarea {
 
     align-items: center;
     justify-items: center;
-    
 
+    
 
 }
 
@@ -598,6 +607,21 @@ textarea {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    border-radius: 10px;
+    border: 2px solid #c7a93b;
+
+
+}
+
+.grid-galerie img:hover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border: 4px solid #c7a93b;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
 
 
 }
