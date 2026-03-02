@@ -655,6 +655,7 @@ textarea {
     padding: 30px;
     margin-top: 15px;
     margin-bottom: 25px;
+    
 
     list-style: none;
     display: grid;
@@ -670,7 +671,7 @@ textarea {
 
 .map {
     width: 100%;
-
+    margin: 15px;
     border-radius: 15px;
     overflow: hidden;
 
