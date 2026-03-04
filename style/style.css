@@ -57,9 +57,9 @@ a {
 }
 
 a:hover {
-    
+
     color: #e94e30;
-    
+
 }
 
 /*-- Header /  Navigations / Footer--*/
@@ -217,13 +217,14 @@ nav li {
 
 .btn-menu.current-page {
     background-color: #023529;
-    
+
     border-color: #fff;
     font-weight: 700;
 }
+
 .btn-menu.btn-ma-commande.current-page {
     background-color: #e94e30;
-    
+
     border-color: #c7a93b;
     font-weight: 700;
 }
@@ -663,7 +664,7 @@ textarea {
     padding: 30px;
     margin-top: 15px;
     margin-bottom: 25px;
-    
+
 
     list-style: none;
     display: grid;
@@ -694,10 +695,70 @@ textarea {
 
 }
 
+.ma-commande {
+    background-color: #c7a93b60;
+
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding: 30px;
+    border-radius: 15px;
+
+}
+
+.commande-layout {
+    display: flex;
+    gap: 35px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.tb-commande table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    text-align: center;
+
+}
+
+th {
+    background-color: #c7a93b;
+    color: #023529;
+    padding: 10px 14px;
+
+}
+
+.tb-commande tr {
+    transition: background 0.15s ease;
+}
+
+.tb-commande tr:hover {
+    background-color: #023529;
+}
+
+.tb-commande td:hover {
+    background-color: #3a5c2e;
+}
+
+
+.tb-details tbody td {
+    width: 100px;
+}
 
 
 
 
+tfoot tr:first-child th,
+tfoot tr:first-child td {
+    border-top: 3px solid #e94e30;
+}
+
+tfoot td {
+    text-align: center;
+}
+
+tfoot .btn-body {
+    margin: 10px;
+}
 
 
 
@@ -716,21 +777,21 @@ textarea {
         width: 92%;
     }
 
-.grid-galerie {
+    .grid-galerie {
 
-    gap: 10px;
+        gap: 10px;
 
 
-    padding: 40px;
+        padding: 40px;
 
-}
+    }
 
     .grid-galerie img:hover {
-    
-    transform: scale(1.1);
+
+        transform: scale(1.1);
 
 
-}
+    }
 }
 
 @media screen and (max-width: 960px) {
@@ -936,9 +997,9 @@ textarea {
     }
 
     .coordonnees {
-    
-    grid-template-columns: 1fr;
 
-}
+        grid-template-columns: 1fr;
+
+    }
 
 }
