@@ -122,7 +122,7 @@ nav li {
 .btn-menu:hover {
     font-weight: 800;
     color: #fff;
-    border: 5px solid #fff;
+    border: 5px solid #c7a93b;
 
     font-weight: 700;
     background-color: #023529;
@@ -180,11 +180,12 @@ nav li {
 
 .btn-ma-commande {
     background-color: #c7a93b;
-    border-color: #fff;
+
 
     display: flex;
     align-items: center;
-    gap: 8px
+    gap: 8px;
+    border-radius: 10px;
 }
 
 .btn-ma-commande:hover {
@@ -215,11 +216,18 @@ nav li {
 }
 
 .btn-menu.current-page {
-    background-color: #c7a93b;
-    color: #023529;
+    background-color: #023529;
+    
     border-color: #fff;
     font-weight: 700;
 }
+.btn-menu.btn-ma-commande.current-page {
+    background-color: #e94e30;
+    
+    border-color: #c7a93b;
+    font-weight: 700;
+}
+
 
 .btn-body span {
 
