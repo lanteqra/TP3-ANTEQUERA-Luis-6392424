@@ -318,6 +318,7 @@ i {
     font-weight: 700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
     line-height: 1.9rem;
+    margin-top: 15px;
 }
 
 .clients-list h3 {
@@ -702,6 +703,7 @@ textarea {
     margin-top: 25px;
     padding: 30px;
     border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7)
 
 }
 
@@ -720,11 +722,40 @@ textarea {
 
 }
 
+.assiettes {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border: 2px solid #c7a93b;
+    border-radius: 50px;
+    display: block;
+    margin: 5px;
+
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.assiettes:hover {
+    transform: scale(2);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    border-radius: 10px;
+}
+
+
 th {
     background-color: #c7a93b;
     color: #023529;
     padding: 10px 14px;
 
+}
+
+
+.tb-commande tbody td:first-child {
+    width: 70px;
+    padding: 6px 10px;
 }
 
 .tb-commande tr {
@@ -744,8 +775,16 @@ th {
     width: 100px;
 }
 
-
-
+.tb-details {
+    background-color: #3a5c2e;
+    padding: 20px;
+    border: 2px solid #c7a93b;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7)
+}
+.tb-details h2{
+    margin-top: 0;
+}
 
 tfoot tr:first-child th,
 tfoot tr:first-child td {
