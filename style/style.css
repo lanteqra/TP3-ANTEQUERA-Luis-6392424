@@ -79,7 +79,7 @@ header {
 
     background-color: #023529;
     background-image: url(../media/img/css-pattern.png);
-    background-size: cover;
+    background-size: 300px;
     background-position: center;
     background-repeat: repeat;
 }
@@ -280,9 +280,9 @@ footer {
     padding: 30px 20px;
     background-color: #023529;
     background-image: url(../media/img/css-pattern.png);
-    background-size: cover;
+    background-size: 600px;
     background-position: center;
-    background-repeat: no-repeat
+    background-repeat: repeat
 }
 
 .rs-logo {
