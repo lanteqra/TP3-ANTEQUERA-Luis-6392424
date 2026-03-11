@@ -711,14 +711,15 @@ textarea {
 
 .commande-layout {
     display: flex;
-    gap: 35px;
+    gap: 20px;
 
     align-items: flex-start;
 }
 
 .tb-commande {
     flex: 1;
-    min-width: 0;
+    min-width: 300px;
+
 }
 
 .tb-commande table {
@@ -731,13 +732,14 @@ textarea {
     border-radius: 20px;
     overflow: hidden;
     
-
-}
+    table-layout: fixed;
+}    
 
 .div-table {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
     border-radius: 20px;
     margin-bottom: 20px;
+    margin: 20px;
 }
 
 .assiettes {
@@ -792,7 +794,7 @@ td {
 }
 
 .tb-details {
-    min-width: 250px;
+    width: 300px;
     
     
 }
@@ -804,7 +806,7 @@ td {
     border-radius: 10px;
     overflow: hidden;
 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7)
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
 
     width: 100%;
     border-collapse: collapse;
@@ -812,6 +814,10 @@ td {
     text-align: center;
     border-radius: 20px;
     
+}
+
+.tb-details th {
+    width: 100px;
 }
 
 
@@ -945,6 +951,15 @@ tfoot .btn-body {
         grid-column: span 2;
     }
 
+    .commande-layout{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tb-details{
+        width: 80%;
+        
+    }
 }
 
 /* À partir de 770px, dans le header, le menu passe en colonne afin d'éviter que le logo et les boutons de navigation se chevauchent*/
@@ -964,6 +979,8 @@ tfoot .btn-body {
         margin-left: 0;
 
     }
+
+    
 }
 
 @media screen and (max-width: 570px) {
@@ -1070,4 +1087,7 @@ tfoot .btn-body {
 
     }
 
+    .assiettes:hover{
+    transform: scale(1);
+}
 }
