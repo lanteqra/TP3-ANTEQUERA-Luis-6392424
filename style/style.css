@@ -696,6 +696,8 @@ textarea {
 
 }
 
+/****** table *******/
+
 .ma-commande {
     background-color: #c7a93b60;
 
@@ -710,16 +712,32 @@ textarea {
 .commande-layout {
     display: flex;
     gap: 35px;
-    justify-content: space-around;
+
     align-items: flex-start;
+}
+
+.tb-commande {
+    flex: 1;
+    min-width: 0;
 }
 
 .tb-commande table {
     width: 100%;
-    border-collapse: collapse;
-    font-size: 0.9rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    
+    font-size: clamp(0.7rem, 1.5vw, 1rem);
     text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    
 
+}
+
+.div-table {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 .assiettes {
@@ -729,7 +747,7 @@ textarea {
     border: 2px solid #c7a93b;
     border-radius: 50px;
     display: block;
-    margin: 5px;
+    margin: 5px auto;
 
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -751,12 +769,10 @@ th {
     padding: 10px 14px;
 
 }
-
-
-.tb-commande tbody td:first-child {
-    width: 70px;
-    padding: 6px 10px;
+td {
+    min-width: 150px ;
 }
+
 
 .tb-commande tr {
     transition: background 0.15s ease;
@@ -776,15 +792,28 @@ th {
 }
 
 .tb-details {
+    min-width: 250px;
+    
+    
+}
+
+.tb-details table {
     background-color: #3a5c2e;
     padding: 20px;
     border: 2px solid #c7a93b;
     border-radius: 10px;
+    overflow: hidden;
+
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7)
+
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    text-align: center;
+    border-radius: 20px;
+    
 }
-.tb-details h2{
-    margin-top: 0;
-}
+
 
 tfoot tr:first-child th,
 tfoot tr:first-child td {
