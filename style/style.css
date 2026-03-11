@@ -813,6 +813,8 @@ td {
     font-size: 0.9rem;
     text-align: center;
     border-radius: 20px;
+    table-layout: fixed;
+
     
 }
 
@@ -831,7 +833,9 @@ tfoot td {
 }
 
 tfoot .btn-body {
-    margin: 10px;
+    margin: 10px auto;
+    display: inline-flex;
+    
 }
 
 
