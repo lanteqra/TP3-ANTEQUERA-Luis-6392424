@@ -18,3 +18,4 @@ https://validator.w3.org/#validate_by_input
 1. index.html : Document checking completed. No errors or warnings to show.
 2. reservation.html : Document checking completed. No errors or warnings to show.
    -2.1. confirmation-reservation : Document checking completed. No errors or warnings to show.
+3. restaurant.html : Document checking completed. No errors or warnings to show.
