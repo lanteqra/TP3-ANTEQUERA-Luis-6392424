@@ -766,7 +766,7 @@ th {
 
 .tb-details table {
     background-color: #3a5c2e;
-    padding: 20px;
+    
     border: 2px solid #c7a93b;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
