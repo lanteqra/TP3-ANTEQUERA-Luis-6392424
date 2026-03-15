@@ -15,4 +15,6 @@ Ce document est valide conformément à la recommandation CSS niveau 3 + SVG !
 ---------------------------------------------------------
 https://validator.w3.org/#validate_by_input
 
-index.html : Document checking completed. No errors or warnings to show.
+1. index.html : Document checking completed. No errors or warnings to show.
+2. reservation.html : Document checking completed. No errors or warnings to show.
+   -2.1. confirmation-reservation : Document checking completed. No errors or warnings to show.

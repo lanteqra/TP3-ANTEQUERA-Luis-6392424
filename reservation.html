@@ -19,7 +19,7 @@
         <div class="flex-header">
 
             <a href="index.html"><img class="logo-header" src="media/img/logo-macondo-bistro.png"
-                    alt="Logo - Mancondo Bistro"></a>
+                    alt="Logo Macondo Bistro"></a>
 
             <a class="btn-menu-mobile" href="#"><img src="media/img/icons/menu-mobile.png" alt="botton menu mobile"></a>
             <nav>
@@ -51,7 +51,7 @@
                     </div>
                     <div class="field">
                         <label for="txt-nom"> Votre nom : <span>*</span></label>
-                        <input type="text" name="text-nom" id="text-nom" placeholder="Veuillez entrer votre nom de famille ici" maxlength="25" required>
+                        <input type="text" name="txt-nom" id="txt-nom" placeholder="Veuillez entrer votre nom de famille ici" maxlength="25" required>
                     </div>
                     <div class="field">
                         <label for="txt-email">E-mail :</label>
@@ -60,7 +60,7 @@
                     </div>
                     <div class="field">
                         <label for="nombre-telephone">Téléphone : <span>*</span></label>
-                        <input type="tel" name="nombre-telephone" id="nombre-telephone" placeholder="Entrez votre numéro de téléphone (ex: (819)456-7891 )"
+                        <input type="tel" name="nombre-telephone" id="nombre-telephone" placeholder="Entrez votre numéro de téléphone (ex: (819)456-7891) seulment les chiffres" 
                             maxlength="10" required>
                     </div>
                     <div class="field">
@@ -68,7 +68,7 @@
                         <div class="radio-mc">
                             <div>
                                 <input type="radio" id="radio-m-communication-1" name="radio-m-communication"
-                                    value="email">
+                                    value="email" required>
                                 <label for="radio-m-communication-1">E-mail</label>
                             </div>
                             <div>
@@ -90,7 +90,7 @@
                                     <label for="radio-table-1">Salle à manger</label>
                                 </div>
                                 <div>
-                                    <input type="radio" id="radio-table-2" name="radio-table" value="terrase">
+                                    <input type="radio" id="radio-table-2" name="radio-table" value="terrasse">
                                     <label for="radio-table-2">Terrasse</label>
                                 </div>
                             </div>
@@ -130,7 +130,7 @@
 
                         </div>
                         <p class="frm-note"> Plus de 10 personnes ? Appelez-nous au <a
-                                href="tel:+1 (819) 123 4567">(819) 123 - 4567 </a> </p>
+                                href="tel:+18191234567">(819) 123 - 4567 </a> </p>
 
 
                         <div class="field ">
@@ -141,22 +141,22 @@
 
                                 <div>
                                     <input class="occasion-tag" type="radio" name="occasion" id="oc-anniv"
-                                        value="anniversaire" />
+                                        value="anniversaire" >
                                     <label class="occasion-label" for="oc-anniv">Anniversaire</label>
                                 </div>
                                 <div>
                                     <input class="occasion-tag" type="radio" name="occasion" id="oc-rom"
-                                        value="romantique" />
+                                        value="romantique" >
                                     <label class="occasion-label" for="oc-rom">Romantique</label>
                                 </div>
                                 <div>
                                     <input class="occasion-tag" type="radio" name="occasion" id="oc-aff"
-                                        value="affaires" />
+                                        value="affaires" >
                                     <label class="occasion-label" for="oc-aff">Affaires</label>
                                 </div>
                                 <div>
                                     <input class="occasion-tag" type="radio" name="occasion" id="oc-autre"
-                                        value="autre" />
+                                        value="autre" >
                                     <label class="occasion-label" for="oc-autre">Autre</label>
                                 </div>
 
@@ -171,7 +171,7 @@
                                 maxlength="500"></textarea>
 
                         </div>
-                        <p class="frm-note"> Besoin d'aide ? Appelez-nous au <a href="tel:+1 (819) 123 4567"> (819) 123-
+                        <p class="frm-note"> Besoin d'aide ? Appelez-nous au <a href="tel:+18191234567"> (819) 123-
                                 4567</a> </p>
 
 
@@ -200,7 +200,7 @@
     </main>
 
     <footer>
-        <section class=" container">
+        <div class=" container">
             <div class="flex-footer">
                 <div>
                     <a href="mailto:contact@macondo.ca"><i class="fa-solid fa-envelope-open"></i></a> <span>Site réalisé par : Luis Antequera</span>
@@ -226,7 +226,7 @@
                 <p>Techniques d'integration des interfaces Web </p>
                 <p>Cégep de Trois-Rivières | Hiver 2026</p>
             </div>
-        </section>
+        </div>
     </footer>
 
 </body>
